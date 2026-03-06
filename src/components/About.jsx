@@ -6,28 +6,21 @@ const About = () => {
     'Data Management', 'Google Apps Script', 'Advanced Excel/Sheets', 'Tailwind CSS'
   ];
 
-  // Added MIS Executive to your timeline
+  // Updated timeline to reflect concurrent roles from June 2025 to Present
   const timeline = [
     {
       role: 'Frontend Developer',
-      company: 'Freelance & Corporate Dashboards',
-      period: '2024 - Present',
+      company: 'Corporate Dashboards & Web Applications',
+      period: 'June 2025 - Present',
       color: 'bg-cyan-500 dark:bg-cyan-400',
       shadow: 'shadow-[0_0_10px_rgba(34,211,238,0.5)]'
     },
     {
       role: 'MIS Executive',
       company: 'Business Automation Systems',
-      period: '2023 - 2024',
+      period: 'June 2025 - Present',
       color: 'bg-emerald-500 dark:bg-emerald-400',
       shadow: 'shadow-[0_0_10px_rgba(16,185,129,0.5)]'
-    },
-    {
-      role: 'Web Developer',
-      company: 'Ecowings Digital Platform',
-      period: '2022 - 2023',
-      color: 'bg-purple-600 dark:bg-purple-500',
-      shadow: 'shadow-[0_0_10px_rgba(168,85,247,0.5)]'
     }
   ];
 
@@ -41,10 +34,9 @@ const About = () => {
             <h2 className="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white tracking-wide">About Me</h2>
           </div>
           
-          {/* Updated text to highlight MIS & Development */}
           <div className="space-y-6 text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
             <p>
-              Hello! I'm <span className="text-blue-600 dark:text-cyan-300 font-medium">Mohd.Sahil</span>, a hybrid Frontend Developer and MIS Executive. I specialize in bridging the gap between raw business data and beautiful, high-performance web applications.
+              Hello! I'm <span className="text-blue-600 dark:text-cyan-300 font-medium">Mohd. Sahil</span>, a hybrid Frontend Developer and MIS Executive. I specialize in bridging the gap between raw business data and beautiful, high-performance web applications.
             </p>
             <p>
               My expertise lies in the PERN stack (PostgreSQL, Express, React, Node.js) and deeply integrating automated workflows via Google Apps Script. From architecting complex Business Automation Systems (BAS) to creating dynamic recruitment and leave management dashboards, I ensure that data is not just managed, but visualized brilliantly.

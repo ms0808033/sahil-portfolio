@@ -4,22 +4,28 @@ import { ExternalLink } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: 'Business Automation System (BAS)',
-      description: 'A comprehensive full-stack system streamlining complex operations and automated workflows.',
-      tech: ['React', 'Node.js', 'PostgreSQL', 'Tailwind CSS'],
+      title: 'Business Automation System (Current)',
+      description: 'Developing a comprehensive, full-stack business automation platform utilizing the complete PERN stack to manage core business processes.',
+      tech: ['React', 'Node.js', 'Express', 'PostgreSQL'],
       gradient: 'from-purple-500/20 to-blue-500/20'
     },
     {
-      title: 'Ecowings Digital Platform',
-      description: 'Digital infrastructure for the Ecowings Electric Vehicle company, featuring a modern, highly responsive UI.',
-      tech: ['React', 'Tailwind CSS', 'Express'],
+      title: 'Training Module',
+      description: 'Architected and deployed a robust training web application leveraging the PERN stack for efficient user education and knowledge transfer.',
+      tech: ['React', 'Node.js', 'Express', 'PostgreSQL'],
       gradient: 'from-cyan-500/20 to-blue-500/20'
     },
     {
-      title: 'Corporate Dashboard Suite',
-      description: 'Specialized portals for Recruitment, Leave Management, and Training utilizing cloud automation.',
-      tech: ['React', 'Google Apps Script', 'Tailwind CSS'],
+      title: 'Management Dashboards',
+      description: 'Designed and implemented specialized Attendance Marking and Task Completion Dashboards, providing both end-users and Managing Directors with critical operational metrics for oversight.',
+      tech: ['React', 'Tailwind CSS', 'Dashboard UI'],
       gradient: 'from-blue-500/20 to-emerald-500/20'
+    },
+    {
+      title: 'Internal MIS Systems',
+      description: 'Created and optimized a Checklist MIS and a Flow Management System to standardize and significantly improve organizational process efficiency.',
+      tech: ['Google Apps Script', 'Data Management', 'React'],
+      gradient: 'from-emerald-500/20 to-cyan-500/20'
     }
   ];
 
@@ -29,7 +35,8 @@ const Projects = () => {
         Selected <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-400 dark:to-cyan-400">Works</span>
       </h2>
       
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* Adjusted grid to perfectly fit 4 items (2x2 layout on desktop) */}
+      <div className="grid md:grid-cols-2 gap-8">
         {projects.map((project, idx) => (
           <div key={idx} className="group relative p-[1px] rounded-2xl bg-gradient-to-b from-slate-200 to-slate-100 dark:from-white/10 dark:to-white/5 hover:from-cyan-400/50 hover:to-blue-600/50 transition-all duration-500 shadow-sm hover:shadow-xl">
             <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl rounded-2xl`}></div>
