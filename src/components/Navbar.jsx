@@ -25,7 +25,7 @@ const Navbar = () => {
   ];
 
   // The pre-filled WhatsApp message URL
-  const whatsappMessage = "Hi Mohd. Sahil! I came across your portfolio. I'm looking for a Frontend Developer & MIS Executive and would love to discuss a potential opportunity with you.";
+  const whatsappMessage = "Hi Mohd. Sahil! I came across your portfolio. I'm looking for a Frontend Developer & MIS Executive and would like to discuss a potential opportunity with you.";
   const hireMeLink = `https://wa.me/917007986578?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
